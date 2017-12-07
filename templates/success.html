@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Registration Successful
+{% endblock %}
+
+{% block body %}
+<div style="text-align:center">
+	<h1>Sheep</h1>
+	<ul>
+		{% for r in result %}
+		<li style="list-style-type: none;">{{ r.name }} from {{ r.cg }}</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="initial-scale=1, width=device-width" name="viewport"/>
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+
+	<body>
+		<div style="text-align: center;">
+		{% block body %}
+		{% endblock %}
+	<a href="{{ url_for('sheep') }}">View Sheep</a>
+	<a href="{{ url_for('index') }}">Back to Register Sheep</a>
+	<a href="{{ url_for('unregister') }}">Unregister Sheep</a>
+	<a href="{{ url_for('update') }}">Update Sheep</a>
+	</div>
+	</body>
+</html>

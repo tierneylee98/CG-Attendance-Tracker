@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Update Sheep
+{% endblock %}
+
+{% block body %}
+<div style="text-align:center;">
+	<h1>Sheep to Update</h1>
+	<form action="{{ url_for('update') }}" method="post">
+	<ul>
+		{% for r in result %}
+			<li style="list-style-type: none;"><input name="id" type="radio" value="{{ r.id }}">{{ r.name }} from {{ r.cg }}</li>
+		{% endfor %}
+	</ul>
+	<input type="submit" value="Edit"/>
+	</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Registration Failed
+{% endblock %}
+
+{% block body %}
+<div style="text-align:center">
+	<h1>Registration Failed</h1>
+	<a href="{{ url_for('index') }}">Back to Register Sheep</a>
+	<a href="{{ url_for('sheep') }}">View Sheep</a>
+</div>
+{% endblock %}
